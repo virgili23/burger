@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var exphbs = require("express-handlebars");
 var bodyParser = require("body-parser");
-
+require('dotenv').config();
 
 app.use(express.static(__dirname + '/public'));
 

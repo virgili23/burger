@@ -24,7 +24,7 @@ if (process.env.JAWSDB_URL) {
         password: process.env.PASSWORD,
         database: "burgers_db"
     });
-}
+};
 
 connection.connect(function(err) {
     if (err)throw err; 

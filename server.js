@@ -3,6 +3,7 @@ var app = express();
 var exphbs = require("express-handlebars");
 var bodyParser = require("body-parser");
 require('dotenv').config();
+var PORT = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + '/public'));
 
@@ -27,4 +28,4 @@ app.get('/', function (req, res) {
     res.send('Hello World');
   })
    
-  app.listen(3000);
+  app.listen(PORT);
